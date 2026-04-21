@@ -1,0 +1,96 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header (Flexbox) */
+.header {
+    background: #333;
+    color: white;
+}
+
+.navbar {
+    display: flex; /* FLEXBOX */
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.nav-links {
+    display: flex; /* FLEXBOX */
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Layout (GRID) */
+.container {
+    display: grid; /* GRID */
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Hero */
+.hero {
+    background: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+/* About */
+.about {
+    background: #ddd;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Products */
+.products {
+    padding: 30px;
+}
+
+/* Cards using Flexbox */
+.product-cards {
+    display: flex; /* FLEXBOX */
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #eee;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+/* Extra Section */
+.extra {
+    background: #ccc;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
